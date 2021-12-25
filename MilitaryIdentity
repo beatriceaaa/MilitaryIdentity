@@ -1,0 +1,92 @@
+public class Person public class Person {
+    // Variables defined to store the name and gender of a person
+    private String firstName;
+    private String middleInitial;
+    private String lastName;
+    private String gender;
+    
+    // constructor of the Person class
+    public Person(String f, String m, String l, String g)
+    {
+        firstName = f;
+        middleInitial = m;
+        lastName = l;
+        gender = g;
+        
+    } // end of constructor
+    
+    // Method to format and print the variables
+    public String toString()
+    {
+        return String.format("Name: %s %s %s, Gender: %s", firstName, middleInitial, lastName, gender);
+    } // end of method
+}
+public class Military extends Person{
+private String status;
+
+public Military(String f, String m, String l, String g, String s)
+{
+super(f, m, l, g);
+status = s;
+}
+public String toString()
+{
+return String.format(" %s, Status: %s", super.toString(), status);
+}
+}
+public class NavySailor extends Military{
+    private String assignment;
+    private String rank
+    public NavySailor(String f, String m, String l, String g, String s, String a, String r)
+    {
+        super(f, m, l, g, s);
+        assignment {
+    // Variables defined to store the name and gender of a person
+    private String firstName;
+    private String middleInitial;
+    private String lastName;
+    private String gender;
+    
+    // constructor of the Person class
+    public Person(String f, String m, String l, String g)
+    {
+        firstName = f;
+        middleInitial = m;
+        lastName = l;
+        gender = g;
+        
+    } // end of constructor
+    
+    // Method to format and print the variables
+    public String toString()
+    {
+        return String.format("Name: %s %s %s, Gender: %s", firstName, middleInitial, lastName, gender);
+    } // end of method
+}
+public class Military extends Person{
+private String status;
+
+public Military(String f, String m, String l, String g, String s)
+{
+super(f, m, l, g);
+status = s;
+}
+public String toString()
+{
+return String.format(" %s, Status: %s", super.toString(), status);
+}
+}
+public class NavySailor extends Military{
+    private String assignment;
+    private String rank
+    public NavySailor(String f, String m, String l, String g, String s, String a, String r)
+    {
+        super(f, m, l, g, s);
+        assignment = a;
+        rank = r; 
+    }
+    public String toString()
+    {
+        return String.format(" %s, Assignment: %s, Rank: %s", super.toString(), assignment, rank);
+    }
+}
